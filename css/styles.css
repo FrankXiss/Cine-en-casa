@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#140d1a;
+}
+.bgColor1{
+    background-color: #42142a;
+}
+.head-logo{
+    display: flex;
+    width :100px;
+    height: 100px;
+}
+.link{
+    color: #faeeca;
+    font-size: 1.4rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+} 
+.link:hover{
+    color: #ffd452;
+
+}
+.nombre{
+    color: #faeeca;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.portada-pelis{
+    max-height: 500px;
+    object-fit: cover;
+}
+.titulos{
+    padding: 40px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #faeeca;
+}
+.contenedor-movie{
+    display: flex;
+    justify-content: space-evenly; 
+}
+.div-movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    max-width: 250px;
+}
+.img-movie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    border: 2px solid #faeeca;
+}
+.text-movie{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #faeeca;
+}
+.div-movie:hover{
+    background-color: #42142a;
+    border-radius: 15%;
+}
+.div-movie .text-movie:hover{
+    color: #ffd452;
+}
+.img-movie .text-movie:hover{
+    color: #ffd452;
+}
+
+footer{
+    background-color: #42142a;
+    text-align: center;
+    position: fixed;
+    bottom: 0vh;
+    width: 100%;
+    color: #faeeca;
+}
+.buscador{
+    background-color: #faeeca;
+    padding: 20px;
+}
+.btn-hover{
+    border: #42142a  solid 4px;
+    border-radius: 30%;
+}
+.btn-hover:hover{
+    background-color: #ffd452;
+}
+.label{
+    background-color: #faeeca;
+    border: #42142a solid 2px;
+}
+.flechaIzq{
+    left: 20px;
+    width: 50px;
+    border-radius: 50%;
+}
+.flechaDer{
+    right: 20px;
+    width: 50px;
+    border-radius: 50%;
+}
+@media (max-width: 576px) { 
+.nombre{
+    display: none;
+}
+.portada-pelis{
+    height: 1000px;
+    object-fit: contain;
+}
+.titulos{
+    font-size: 1.5rem;
+}
+}

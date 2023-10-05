@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cine en Casa</title>
+    <link rel="shortcut icon" href="./assets/icon/CC-Logo (1).ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <!-- Barra de NAvegacion -->
+
+        <nav class="navbar navbar-expand-lg bgColor1 conteiner-fluid navbar-dark">
+            <div class="container-fluid ">
+                <a class="navbar-brand d-flex align-items-center " href="../index.html">
+                    <img class="head-logo" src="../assets/logo/CC-Logo.png" alt="cc-logo"> 
+                    <p class="nombre mt-2">Cine En Casa</p>
+                </a>
+                <button class="navbar-toggler btn-hover" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 w-100 d-flex justify-content-end gap-1" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./pages/genero.html">Genero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link" href="./pages/series.html">Series</a>
+                        </li>
+                        <li class="nav-item nom ">
+                            <a class="nav-link link" href="./pages/peliculas.html">Peliculas</a>
+                        </li>
+                    </ul>
+                    
+                        <form class="d-flex ms-2" role="search">
+                            <input class="form-control me-2 label" type="search" placeholder="Buscar..." aria-label="Buscar...">
+                            <a href="./pages/buscador.html"></a>
+                            <button class="btn btn-hover" type="submit">
+                                <img class="icono" src="../assets/icon/buscar_32x32.png" alt="busqueda">
+                            </button>               
+                        </a>             
+                        </form>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- portada peliculas carrusel -->
+
+        <section>
+            <div id="carouselPeliculasIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPeliculasIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPeliculasIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPeliculasIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/portadas/1316826.jpeg" class="d-block w-100 portada-pelis" alt="...">
+                    </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/portadas/blue-beetle-1920x1080.webp" class="d-block w-100 portada-pelis" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/img/portadas/oppenheimer-portada.jpg" class="d-block w-100 portada-pelis" alt="...">
+                </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeliculasIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPeliculasIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- seccion peliculas -->
+
+
+        <section>
+            <h2 class="titulos">Películas Destacadas</h2>
+            
+            <div id="carouselPeliculas" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <section class="contenedor-movie">
+
+                            <!-- peliculas 2da pargina del carrusel -->
+
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/oppenheimer-200x300.jpg" alt="oppenheimer-200x300">
+                                <h4 class="text-movie">Oppenheimer</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/blue-beattle-200x300.jpg" alt="blue-beattle-200x300">
+                                <h4 class="text-movie">Blue Beattle</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/el-sonido-de-la-libertad-200x300.jpg" alt="el-sonido-de-la-libertad-200x300">
+                                <h4 class="text-movie">El Sonido de la Libertad</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/elementos-200x300.jpg" alt="elementos-200x300">
+                                <h4 class="text-movie">Elementos</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/FLASDH-4K-200x300.jpg" alt="FLASDH-4K-200x300">
+                                <h4 class="text-movie">Flash</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/indiana-jones-2023-4K-200x300.jpg" alt="indiana-jones-2023-4K-200x300">
+                                <h4 class="text-movie">Indiana Jones</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/megalodon-2-el-gran-abismo-200x300.jpg" alt="megalodon-2-el-gran-abismo-200x300">
+                                <h4 class="text-movie">Megalodon 2</h4>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="contenedor-movie">
+
+                            <!-- peliculas 2da pargina del carrusel -->
+
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/oppenheimer-200x300.jpg" alt="oppenheimer-200x300">
+                                <h4 class="text-movie">Oppenheimer</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/blue-beattle-200x300.jpg" alt="blue-beattle-200x300">
+                                <h4 class="text-movie">Blue Beattle</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/el-sonido-de-la-libertad-200x300.jpg" alt="el-sonido-de-la-libertad-200x300">
+                                <h4 class="text-movie">El Sonido de la Libertad</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/elementos-200x300.jpg" alt="elementos-200x300">
+                                <h4 class="text-movie">Elementos</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/FLASDH-4K-200x300.jpg" alt="FLASDH-4K-200x300">
+                                <h4 class="text-movie">Flash</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/indiana-jones-2023-4K-200x300.jpg" alt="indiana-jones-2023-4K-200x300">
+                                <h4 class="text-movie">Indiana Jones</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/megalodon-2-el-gran-abismo-200x300.jpg" alt="megalodon-2-el-gran-abismo-200x300">
+                                <h4 class="text-movie">Megalodon 2</h4>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <<section class="contenedor-movie">
+
+                            <!-- peliculas 2da pargina del carrusel -->
+
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/oppenheimer-200x300.jpg" alt="oppenheimer-200x300">
+                                <h4 class="text-movie">Oppenheimer</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/blue-beattle-200x300.jpg" alt="blue-beattle-200x300">
+                                <h4 class="text-movie">Blue Beattle</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/el-sonido-de-la-libertad-200x300.jpg" alt="el-sonido-de-la-libertad-200x300">
+                                <h4 class="text-movie">El Sonido de la Libertad</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/elementos-200x300.jpg" alt="elementos-200x300">
+                                <h4 class="text-movie">Elementos</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/FLASDH-4K-200x300.jpg" alt="FLASDH-4K-200x300">
+                                <h4 class="text-movie">Flash</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/indiana-jones-2023-4K-200x300.jpg" alt="indiana-jones-2023-4K-200x300">
+                                <h4 class="text-movie">Indiana Jones</h4>
+                            </div>
+                            <div class="div-movie">
+                                <img class="img-movie" src="./assets/img/peliculas/megalodon-2-el-gran-abismo-200x300.jpg" alt="megalodon-2-el-gran-abismo-200x300">
+                                <h4 class="text-movie">Megalodon 2</h4>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <button class="carousel-control-prev flechaIzq" type="button" data-bs-target="#carouselPeliculas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next flechaDer" type="button" data-bs-target="#carouselPeliculas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section>
+
+
+            <!-- seccion series -->
+
+
+            <h2 class="titulos">Series Destacadas</h2>
+
+                <div id="carouselSeries" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <!-- Series 1ra pargina del carrusel -->
+
+                            <section class="contenedor-movie">
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/barrabraba-200x300.jpg" alt="barrabraba-200x300">
+                                    <h4 class="text-movie">Barrabrava</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/el-encargado-200x300.jpg" alt="el-encargado-200x300">
+                                    <h4 class="text-movie">El Encargado</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/invasion-secreta-4K-200x300.jpg" alt="invasion-secreta-4K-200x300">
+                                    <h4 class="text-movie">Invasión Secreta</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/loki-202x300.jpg" alt="loki-202x300">
+                                    <h4 class="text-movie">Loki</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/one-piece-200x300.jpg" alt="one-piece-200x300">
+                                    <h4 class="text-movie">One Piece</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/the-last-of-us-200x300.jpg" alt="the-last-of-us-200x300">
+                                    <h4 class="text-movie">The Last of Us</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/tusla-king-200x300.jpg" alt="tusla-king-200x300">
+                                    <h4 class="text-movie">Tusla King</h4>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="carousel-item">
+
+                            <!-- Series 2da pargina del carrusel -->
+
+                            <section class="contenedor-movie">
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/barrabraba-200x300.jpg" alt="barrabraba-200x300">
+                                    <h4 class="text-movie">Barrabrava</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/el-encargado-200x300.jpg" alt="el-encargado-200x300">
+                                    <h4 class="text-movie">El Encargado</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/invasion-secreta-4K-200x300.jpg" alt="invasion-secreta-4K-200x300">
+                                    <h4 class="text-movie">Invasión Secreta</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/loki-202x300.jpg" alt="loki-202x300">
+                                    <h4 class="text-movie">Loki</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/one-piece-200x300.jpg" alt="one-piece-200x300">
+                                    <h4 class="text-movie">One Piece</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/the-last-of-us-200x300.jpg" alt="the-last-of-us-200x300">
+                                    <h4 class="text-movie">The Last of Us</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/tusla-king-200x300.jpg" alt="tusla-king-200x300">
+                                    <h4 class="text-movie">Tusla King</h4>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="carousel-item">
+
+                            <!-- Series 3ra pargina del carrusel -->
+
+                            <section class="contenedor-movie">
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/barrabraba-200x300.jpg" alt="barrabraba-200x300">
+                                    <h4 class="text-movie">Barrabrava</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/el-encargado-200x300.jpg" alt="el-encargado-200x300">
+                                    <h4 class="text-movie">El Encargado</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/invasion-secreta-4K-200x300.jpg" alt="invasion-secreta-4K-200x300">
+                                    <h4 class="text-movie">Invasión Secreta</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/loki-202x300.jpg" alt="loki-202x300">
+                                    <h4 class="text-movie">Loki</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/one-piece-200x300.jpg" alt="one-piece-200x300">
+                                    <h4 class="text-movie">One Piece</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/the-last-of-us-200x300.jpg" alt="the-last-of-us-200x300">
+                                    <h4 class="text-movie">The Last of Us</h4>
+                                </div>
+                                <div class="div-movie">
+                                    <img class="img-movie" src="./assets/img/series/tusla-king-200x300.jpg" alt="tusla-king-200x300">
+                                    <h4 class="text-movie">Tusla King</h4>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev flechaIzq" type="button" data-bs-target="#carouselSeries" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next flechaDer" type="button" data-bs-target="#carouselSeries" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+        </section>
+
+        
+    </main>
+
+    <footer class="conteiner-fluid">
+        <div class="row">   
+            <p class="col-12">© 2023 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
