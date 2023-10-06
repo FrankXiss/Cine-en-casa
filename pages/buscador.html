@@ -31,21 +31,33 @@
                             <a class="nav-link link" href="./peliculas.html">Peliculas</a>
                         </li>
                     </ul>
-                    <form class="d-flex ms-2" role="search">
-                        <input class="form-control me-2 label" type="search" placeholder="Buscar..." aria-label="Buscar...">
-                        <button class="btn boton" type="submit">
-                            <a href="./pages/buscador.html"><img class="icono" src="../assets/icon/buscar_32x32.png" alt="busqueda"></a>
-                        </button>
-                    </form>
+                    <a class="nav-link link" href="../pages/buscador.html">
+                        <form class="d-flex ms-2" role="search">
+                            <input class="form-control me-2 label" type="search" placeholder="Buscar..." aria-label="Buscar...">
+                            <button class="btn btn-hover" type="submit">
+                                <img class="icono" src="../assets/icon/buscar_32x32.png" alt="busqueda">
+                            </button>               
+                        </form>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-
+        <section class="conteiner-fluid">
+                <p class="mensajeError  d-flex align-items-center justify-content-center">
+                    Contenido no Disponible: Error 404
+                </p>
+                <a class="d-flex conteiner justify-content-end me-3" href="../index.html">
+                    <button class="btn btn-hover label" type="submit"> Volver al Inicio
+                    </button>
+                </a>
+        </section>
     </main>
-    <footer>
-        <p>Este es el Pie de pagina</p>
+    <footer class="conteiner-fluid">
+        <div class="row">   
+            <p class="col-12">© 2023 Todos los derechos reservados.</p>
+        </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

@@ -24,7 +24,7 @@ body{
 } 
 .link:hover{
     color: #ffd452;
-
+    
 }
 .nombre{
     color: #faeeca;
@@ -42,6 +42,13 @@ body{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
+    color: #faeeca;
+}
+.subtitulo{
+    padding: 40px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
     color: #faeeca;
 }
 .contenedor-movie{
@@ -96,14 +103,15 @@ footer{
 }
 .btn-hover{
     border: #42142a  solid 4px;
-    border-radius: 30%;
+    border-radius: 20%;
 }
 .btn-hover:hover{
     background-color: #ffd452;
 }
 .label{
-    background-color: #faeeca;
+    background-color: #ffd452;
     border: #42142a solid 2px;
+    text-decoration: none;
 }
 .flechaIzq{
     left: 20px;
@@ -115,6 +123,13 @@ footer{
     width: 50px;
     border-radius: 50%;
 }
+.mensajeError{
+    height: 70vh;
+    font-size: 3rem;
+    color: #faeeca;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
 @media (max-width: 576px) { 
 .nombre{
     display: none;
@@ -125,5 +140,8 @@ footer{
 }
 .titulos{
     font-size: 1.5rem;
+}
+.subtitulo{
+    font-size: 1.2rem;
 }
 }
