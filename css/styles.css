@@ -1,147 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color:#140d1a;
-}
-.bgColor1{
-    background-color: #42142a;
-}
-.head-logo{
-    display: flex;
-    width :100px;
-    height: 100px;
-}
-.link{
-    color: #faeeca;
-    font-size: 1.4rem;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-} 
-.link:hover{
-    color: #ffd452;
-    
-}
-.nombre{
-    color: #faeeca;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
-    text-decoration: none;
+/* Paleta de colores */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.portada-pelis{
-    max-height: 500px;
-    object-fit: cover;
-}
-.titulos{
-    padding: 40px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #faeeca;
-}
-.subtitulo{
-    padding: 40px;
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #faeeca;
-}
-.contenedor-movie{
-    display: flex;
-    justify-content: space-evenly; 
-}
-.div-movie{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 20px;
-    max-width: 250px;
-}
-.img-movie{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15%;
-    border: 2px solid #faeeca;
-}
-.text-movie{
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    text-align: center;
-    color: #faeeca;
-}
-.div-movie:hover{
-    background-color: #42142a;
-    border-radius: 15%;
-}
-.div-movie .text-movie:hover{
-    color: #ffd452;
-}
-.img-movie .text-movie:hover{
-    color: #ffd452;
+.titulos, .subtitulo {
+  padding: 40px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #faeeca;
 }
 
-footer{
-    background-color: #42142a;
-    text-align: center;
-    position: fixed;
-    bottom: 0vh;
-    width: 100%;
-    color: #faeeca;
+.subtitulo {
+  font-size: 2rem;
+  font-weight: 600;
 }
-.buscador{
-    background-color: #faeeca;
-    padding: 20px;
+
+body {
+  background-color: #140d1a;
 }
-.btn-hover{
-    border: #42142a  solid 4px;
-    border-radius: 20%;
+
+.bgColor1 {
+  background-color: #42142a;
 }
-.btn-hover:hover{
-    background-color: #ffd452;
+.bgColor1 .head-logo {
+  display: flex;
+  width: 100px;
+  height: 100px;
 }
-.label{
-    background-color: #ffd452;
-    border: #42142a solid 2px;
-    text-decoration: none;
+.bgColor1 .nombre {
+  color: #faeeca;
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+  text-decoration: none;
 }
-.flechaIzq{
-    left: 20px;
-    width: 50px;
-    border-radius: 50%;
+.bgColor1 .link {
+  color: #faeeca;
+  font-size: 1.4rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
 }
-.flechaDer{
-    right: 20px;
-    width: 50px;
-    border-radius: 50%;
+.bgColor1 .link:hover {
+  color: #ffd452;
 }
-.mensajeError{
-    height: 70vh;
-    font-size: 3rem;
-    color: #faeeca;
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
+.bgColor1 .link .btn-hover {
+  border: #42142a solid 4px;
+  border-radius: 20%;
 }
-@media (max-width: 576px) { 
-.nombre{
+.bgColor1 .link .btn-hover:hover {
+  background-color: #ffd452;
+}
+.bgColor1 .link .label {
+  background-color: #ffd452;
+  border: #42142a solid 2px;
+  text-decoration: none;
+}
+
+.portada-pelis {
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenedor-movie {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: scroll;
+}
+
+.div-movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px;
+  max-width: 250px;
+}
+.div-movie .img-movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+  border: 2px solid #faeeca;
+}
+.div-movie .img-movie:hover {
+  color: #ffd452;
+}
+.div-movie .text-movie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #faeeca;
+}
+.div-movie .text-movie:hover {
+  color: #ffd452;
+}
+.div-movie:hover {
+  background-color: #42142a;
+  border-radius: 15%;
+}
+
+.flechaIzq {
+  left: 0px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.flechaDer {
+  right: 0px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .nombre {
     display: none;
-}
-.portada-pelis{
+  }
+  .portada-pelis {
     height: 1000px;
-    object-fit: contain;
-}
-.titulos{
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .titulos, .subtitulo {
     font-size: 1.5rem;
-}
-.subtitulo{
+  }
+  .subtitulo {
     font-size: 1.2rem;
+  }
 }
+.mensajeError {
+  height: 70vh;
+  font-size: 3rem;
+  color: #faeeca;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
 }
+
+.btnInicio {
+  border: #42142a solid 4px;
+  border-radius: 20%;
+  background-color: #ffd452;
+  text-decoration: none;
+}
+.btnInicio:hover {
+  background-color: #ffd452;
+}
+
+footer {
+  background-color: #42142a;
+  text-align: center;
+  position: fixed;
+  bottom: 0vh;
+  width: 100%;
+  color: #faeeca;
+}/*# sourceMappingURL=styles.css.map */

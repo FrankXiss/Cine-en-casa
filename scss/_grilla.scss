@@ -1,0 +1,44 @@
+.contenedor-movie{
+    display: flex;
+    justify-content: space-evenly; 
+    overflow: scroll;
+}
+.div-movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    max-width: 250px;
+    .img-movie{
+        @include felxeo(center,center);
+        border-radius: 15%;
+        border: 2px solid map-get($mapaColor,colorTexto);
+        &:hover{
+            color: map-get($mapaColor,colorHover);
+        }
+    }
+    .text-movie{
+        @include felxeo(center,center);
+        padding: 20px;
+        font-size: 1.3rem;
+        text-align: center;
+        color: map-get($mapaColor,colorTexto);
+        &:hover{
+            color: map-get($mapaColor,colorHover);
+        }
+    }
+    &:hover{
+        background-color:map-get($mapaColor,colorPrimario);
+        border-radius: 15%;
+    }
+}
+.flechaIzq{
+    left: 0px;
+    width: 50px;
+    border-radius: 50%;
+}
+.flechaDer{
+    right: 0px;
+    width: 50px;
+    border-radius: 50%;
+}

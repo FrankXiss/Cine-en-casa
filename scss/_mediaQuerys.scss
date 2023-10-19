@@ -1,0 +1,15 @@
+@media (max-width: 576px) { 
+    .nombre{
+        display: none;
+    }
+    .portada-pelis{
+        height: 1000px;
+        object-fit: contain;
+    }
+    .titulos{
+        font-size: 1.5rem;
+    }
+    .subtitulo{
+        font-size: 1.2rem;
+    }
+}
