@@ -7,9 +7,9 @@
     }
     .nombre{
         color: map-get($mapaColor,colorTexto);
-        font-family: $abrilFatface;
         font-size: 3rem;
         text-decoration: none;
+        font-family: $abrilFatface;
     }
     .link{
         color: map-get($mapaColor,colorTexto);

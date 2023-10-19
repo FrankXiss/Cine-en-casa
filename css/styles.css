@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.titulos, .subtitulo {
+.titulos, .text-footer, .subtitulo {
   padding: 40px;
   font-family: "Libre Franklin", sans-serif;
   font-size: 2.5rem;
@@ -17,6 +17,12 @@
 .subtitulo {
   font-size: 2rem;
   font-weight: 600;
+}
+
+.text-footer {
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 5px;
 }
 
 body {
@@ -33,9 +39,9 @@ body {
 }
 .bgColor1 .nombre {
   color: #faeeca;
-  font-family: "Abril Fatface", cursive;
   font-size: 3rem;
   text-decoration: none;
+  font-family: "Abril Fatface", cursive;
 }
 .bgColor1 .link {
   color: #faeeca;
@@ -60,23 +66,28 @@ body {
 }
 
 .portada-pelis {
-  max-height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 600px;
+  /* object-fit: cover; */
+  overflow: hidden;
 }
 
 .contenedor-movie {
   display: flex;
-  justify-content: space-evenly;
-  overflow: scroll;
+  justify-content: start;
+  align-items: none;
+  overflow: auto;
+  /* max-height: 450px; */
 }
 
 .div-movie {
   display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: start;
+  align-items: none;
   padding: 20px;
   max-width: 250px;
+  max-height: 450px;
 }
 .div-movie .img-movie {
   display: flex;
@@ -126,11 +137,17 @@ body {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .titulos, .subtitulo {
+  .titulos, .subtitulo, .text-footer {
     font-size: 1.5rem;
   }
   .subtitulo {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 1700px) {
+  .contenedor-movie {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 .mensajeError {

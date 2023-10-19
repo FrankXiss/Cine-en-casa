@@ -1,14 +1,15 @@
 .contenedor-movie{
-    display: flex;
-    justify-content: space-evenly; 
-    overflow: scroll;
+    @include felxeo(start, none);
+    overflow: auto;
+    /* max-height: 450px; */
 }
 .div-movie{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    @include felxeo(start,none);
     padding: 20px;
     max-width: 250px;
+    max-height: 450px;
     .img-movie{
         @include felxeo(center,center);
         border-radius: 15%;
