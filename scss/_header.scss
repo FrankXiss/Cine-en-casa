@@ -1,0 +1,35 @@
+.bgColor1{
+    background-color: map-get($mapaColor,colorPrimario);
+    .head-logo{
+        display: flex;
+        width :100px;
+        height: 100px;
+    }
+    .nombre{
+        color: map-get($mapaColor,colorTexto);
+        font-size: 3rem;
+        text-decoration: none;
+        font-family: $abrilFatface;
+    }
+    .link{
+        color: map-get($mapaColor,colorTexto);
+        font-size: 1.4rem;
+        font-family: $libreFranklin;
+        font-weight: 600;
+        &:hover{
+            color:map-get($mapaColor,colorHover);  
+        }
+        .btn-hover{
+            border: map-get($mapaColor,colorPrimario)  solid 4px;
+            border-radius: 20%;
+            &:hover{
+                background-color:map-get($mapaColor,colorHover);
+            }
+        }
+        .label{
+            background-color: map-get($mapaColor,colorHover);
+            border: map-get($mapaColor,colorPrimario) solid 2px;
+            text-decoration: none;
+        }
+    } 
+}

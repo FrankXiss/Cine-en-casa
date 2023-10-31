@@ -1,0 +1,16 @@
+.mensajeError{
+    height: 70vh;
+    font-size: 3rem;
+    color: map-get($mapaColor,colorTexto);
+    text-align: center;
+    font-family: $abrilFatface;
+}
+.btnInicio{
+    border: map-get($mapaColor,colorPrimario)  solid 4px;
+    border-radius: 20%;
+        &:hover{
+            background-color:map-get($mapaColor,colorHover);
+        }
+    background-color: map-get($mapaColor,colorHover);
+    text-decoration: none;
+}
