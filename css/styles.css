@@ -20,7 +20,7 @@
 }
 
 .text-footer {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 400;
   padding: 5px;
 }
@@ -67,7 +67,8 @@ body {
 
 .portada-pelis {
   max-height: 600px;
-  /* object-fit: cover; */
+  -o-object-fit: fill;
+     object-fit: fill;
   overflow: hidden;
 }
 
@@ -75,8 +76,9 @@ body {
   display: flex;
   justify-content: start;
   align-items: none;
-  overflow: auto;
-  /* max-height: 450px; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-height: 450px;
 }
 
 .div-movie {
@@ -142,6 +144,9 @@ body {
   }
   .subtitulo {
     font-size: 1.2rem;
+  }
+  .text-footer {
+    font-size: 0.7rem;
   }
 }
 @media (min-width: 1700px) {

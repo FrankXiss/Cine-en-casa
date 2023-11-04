@@ -1,7 +1,8 @@
 .contenedor-movie{
     @include felxeo(start, none);
-    overflow: auto;
-    /* max-height: 450px; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: 450px;
 }
 .div-movie{
     display: flex;
