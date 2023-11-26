@@ -1,8 +1,9 @@
-footer{
+
+    footer{
     background-color: map-get($mapaColor,colorPrimario);
     text-align: center;
     position: fixed;
-    bottom: 0vh;
+    bottom: 0;
     width: 100%;
     color: map-get($mapaColor,colorTexto);
 }

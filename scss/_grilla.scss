@@ -43,3 +43,106 @@
     width: 50px;
     border-radius: 50%;
 }
+
+.grillaForm{
+    @include felxeo(start,none);
+    margin: 0 5%;
+    flex-direction: column;
+    .form-conteiner{
+        @include felxeo(space-between,center);
+        flex-direction: row;
+        margin: 2% 5%;
+        .box-info{
+            @include felxeo(start,start);
+            flex-direction: column;
+            width: 40%;
+            .info-form{
+                .contact-info{
+                    @extend .text-parrafo;
+                    @include felxeo(start,center);
+                    padding: 10px;
+                    padding-left: 0;
+                    margin: auto;
+                }
+                .icon-contact{
+                    @include felxeo(center,center);
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .links-form{
+                margin: 20px 0px;
+                gap: 20px;
+                width: 40%;
+                @include felxeo(start,center);
+                a{
+                    text-decoration: none;
+                    .contact-link{
+                        font-size: 25px;
+                        height: 50px;
+                        width: 50px;
+                        color: map-get($mapaColor, colorTexto );
+                        @include felxeo(center,center);
+                        border-radius: 20%;
+                        &:hover{
+                            border: 2px solid map-get($mapaColor, colorPrimario );
+                            background-color: map-get($mapaColor, colorHover);
+                            color: map-get($mapaColor, colorPrimario )
+                        }
+    
+                    }
+                }
+            }
+        }
+        .input-Form{
+            @include felxeo(start,center);
+            flex-direction: column;
+            width: 40%;
+            gap: 15px;
+            .input-box{
+                @include felxeo(start,center);
+                position: relative;
+                width: 100%;
+                .input-text{
+                    width: 100%;
+                    height: 3em;
+                    padding: 0 10px;
+                    outline:none;
+                    background: rgba(255 255 255 / .1);
+                    border:3px solid transparent;
+                    letter-spacing: 1px;
+                    transition:.3s;
+                    color: map-get($mapaColor, colorTexto );
+                }
+                .icon-contact{
+                    position:absolute;
+                    right: 30px;
+                    color:rgba(255 255 255 / .5);
+                    transition: .3s;
+                }
+                .input-textarea{
+                    @extend .input-text;
+                    width: 100%;
+                    padding: 10px;
+                    height: 7em;
+                }
+                
+            }
+            .form-submit{
+                width: 100%;
+                padding: 10px;
+                outline: none;
+                background: map-get($mapaColor, colorTexto );
+                color:map-get($mapaColor, colorPrimario );
+                border:none;
+                transition: .1s;
+                cursor: pointer;
+                font-size: 1rem;
+                &:hover{
+                    background: map-get($mapaColor, colorHover );
+                    color:map-get($mapaColor, colorPrimario );
+                }
+            }
+        }
+    }
+}

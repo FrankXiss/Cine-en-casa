@@ -34,6 +34,9 @@
                         <li class="nav-item nom ">
                             <a class="nav-link link" href="./pages/peliculas.html">Peliculas</a>
                         </li>
+                        <li class="nav-item nom ">
+                            <a class="nav-link link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
                     </ul>
                     <a class="nav-link link" href="./pages/buscador.html">
                         <form class="d-flex ms-2" role="search">
@@ -52,30 +55,25 @@
     <main>
         <!-- portada peliculas carrusel -->
         <section>
-            <div id="carouselPeliculasPortada" class="carousel slide animate__animated animate__fadeIn animate__slower animate__delay-1s">
-                <div class="carouselPeliculasPortada">
-                    <button type="button" data-bs-target="#carouselPeliculasPortada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselPeliculasPortada" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselPeliculasPortada" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/img/portadas/flash-4k.webp" class="d-block w-100 portada-pelis" alt="Película 1">
-                    </div>
-                <div class="carousel-item">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="./assets/img/portadas/flash-4k.webp" class="d-block w-100 portada-pelis" alt="Película 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="./assets/img/portadas/oppenheimer-portada-4k.webp" class="d-block w-100 portada-pelis" alt="Película 2">
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/portadas/loki-season-2-4k.webp" class="d-block w-100 portada-pelis" alt="Película 3">
                 </div>
                 </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPeliculasPortada" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselPeliculasPortada" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
